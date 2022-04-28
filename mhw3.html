@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MiniHomework3</title>
+    <link rel="stylesheet" href="mhw3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Bodoni+Moda&family=Cinzel:wght@500&display=swap" 
+rel="stylesheet">
+    <script src="mhw3.js" defer="true"></script>
+    <meta name="viewport"
+content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+        <div id="overlay"></div>
+         
+        <div id="logo">
+            My Art Gallery
+        </div>
+        <nav>         
+          <div id="links">
+            <a>Home</a>
+            <a>Gallery</a>
+            <a>Painters</a>
+            <a>News</a>
+            <a>Contact Us</a>
+          </div>
+          <div id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>     
+    </header>
+    <section>
+        <div id="title">
+          <h1>Top 5 quadri da vedere almeno una volta </h1>
+          <p>Una lista dei più celebri e amati dipinti di tutti i tempi, da vedere almeno una volta nella vita.</p>
+        </div>
+        <div id="paintings_container">
+            <div class="painting_block">
+              <h2>1. Gli Amanti, René Magritte (1928)</h2>
+              <h3>Olio su tela, 54 x 73 cm, MoMa, New York</h3>
+              <p>Il quadro raffigura due amanti che si baciano, con le teste coperte da un panno bianco che impedisce loro di 
+                vedersi e comunicare, suscitando una certa inquietudine e angoscia. La scena è poi completata da uno sfondo 
+                fortemente contrastato di tonalità blu e dalla cornice classicheggiante che riveste la rossa parete, 
+                riportando agli occhi i tempi antichi.</p>
+              <img class="painting" src="images/magritte.jpg"/>
+            </div>
+            <div class="painting_block">
+                <h2>2. Notte Stellata, Vincent Van Gogh (1889)</h2>
+                <h3>Oleografia su tela, 74 x 92 cm, MoMa, New York</h3>
+                <p>La Notte Stellata di Vincent Van Gogh è uno dei quadri più noti della tradizione pittorica occidentale e un 
+                  vero e proprio testamento emozionale dell’artista olandese. Unendo sogno e realtà in una cornice soffusa, 
+                  la notte ritratta nel 1889 da Van Gogh diventa specchio della propria anima e portale nel forte turbinio emotivo 
+                  dell’artista mentre si avvicina tristemente alla fase più critica della sua vita</p>
+                <img class="painting" src="images/vangogh.jpg"/>
+            </div>
+            <div class="painting_block">
+              <h2>3. Il Bacio con la Finestra, Edvard Munch (1892)</h2>
+              <h3>Olio su tela, 73 x 92 cm, Galleria Nazionale di Oslo, Oslo</h3>
+              <p>Le due figure abbracciate, impossibili da distinguere separatamente, rappresentano la perdita d'identità. 
+                Il rapporto tra uomo e donna si configura come tensione tra desiderio di amare e paura di amare. 
+                Il rapporto ambiguo è espresso dalla fusione fisica delle due figure che si abbracciano nel tentativo di annullarsi 
+                o assimilarsi. In ciò Munch trasferisce quel doloroso senso di solitudine legate al suo vissuto personale.</p>
+              <img class="painting" src="images/munch.jpg"/>
+            </div>
+            <div class="painting_block">
+              <h2>4. Composizione VIII, Vasilij Kandinskij (1923)</h2>
+              <h3>Olio su tela, 140 x 201 cm, Museo Guggenheim, New York</h3>
+              <p>Una delle opere più celebri del padre russo dell'Astrattismo. L'opera rappresenta forme geometriche elementari 
+                (cerchi, triangoli, quadrati, linee...), disposte in maniera apparentemente casuale.Tuttavia, ogni linea di 
+                questo quadro ha un significato psicologico: le linee triangolari rappresentano tensione, quelle orizzontali 
+                rappresentano un sentimento di calma, quelle circolari rappresentano movimento, e così via.</p>
+              <img class="painting" src="images/kandisky.jpg"/>
+            </div>
+            <div class="painting_block">
+              <h2>5. La Persistenza della Memoria, Salvador Dalì (1931)</h2>
+              <h3>Olio su tela, 24 x 33 cm, MoMa, New York</h3>
+              <p>Opera surrealista per antonomasia, La persistenza della memoria raffigura una landa deserta dominata dalla presenza 
+                di alcuni orologi molli, dalla consistenza quasi fluida, simboli dell'elasticità del tempo.
+                Mostrandosi assai sensibile all'influsso di Sigmund Freud, Dalì con La persistenza della memoria riflette sulla 
+                relatività del tempo.</p>
+              <img class="painting" src="images/dali.jpg"/>
+            </div>
+        </div>
+    </section>
+    <section id="search">
+      <h2>Ricerca Opere d'Arte</h1>
+      <p>Vuoi visualizzare altre opere? Prova ad effettuare una ricerca!</p>
+      <form>
+        <input type="text" id="artist">
+        <input type="submit" id="submit" value="Cerca">
+      </form>
+      <section id='view-art'>
+      </section>
+    </section>
+    <section id="music">
+      <h2>Musica per l'ispirazione</h2>
+      <p>Infine, ecco degli spunti di musica classica per stimolare al meglio la tua passione artistica.
+        Clicca per aggiornare i suggerimenti!
+      </p>
+      <button id="suggerimenti">New</button>
+      <section id="view-music">
+
+      </section>
+    </section>
+    <footer>
+        <address>Gabriele Spagnuolo (1000002217)</address>
+        <p>Web Programming Course <br/> 2022</p>
+    </footer>
+  </body>
+</html>

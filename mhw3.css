@@ -1,0 +1,304 @@
+body { 
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    background:  url(images/header_art_gallery.jpg);
+    background-size: cover;
+    background-position:  center;
+    height: 360px;
+    width: auto;
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+
+    color: white;
+}
+
+#overlay{
+    background-color: rgba(30, 47, 51, 0.6);
+    position: absolute;
+    
+    top: 0px;
+    bottom: 0px;
+    height:100%;
+    width:100%;
+}
+
+#logo {
+    /*font-size: 40px;*/
+    font-size: 4em;
+    font-family: 'Cinzel', sans-serif;
+    z-index: 1;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border:2px solid white;
+    
+    background-color:rgba(0,0,0,0.4);
+}
+
+
+#links{
+    font-family: 'Belleza', sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#links a:hover {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border:2px solid white;
+    background-color:rgba(0,0,0,0.4);
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+nav a {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+header nav {
+    position: absolute;
+    bottom: 8px;
+    
+    font-size: 1em;
+    padding: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    #logo{
+         font-size: 2em;
+    }
+    header{
+        height: 200px;
+    }
+    header nav{
+        top: 0px;
+        right: 0px;
+    }
+    #links {
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+}
+
+section {
+    margin: 20px 120px;
+    text-align: left;
+    font-family: 'Belleza', sans-serif;
+    font-style: normal;
+    color: rgb(40,40,40);
+}
+
+#title h1 {
+    font-size: 3em;
+}
+
+#title p {
+    font-size: 2em;
+}
+
+#paintings_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.painting_block {
+    margin: 20px 50px;
+    font-family: 'Belleza', sans-serif;
+    font-style: normal;
+    color: rgb(40,40,40);
+    width: 700px;
+}
+
+.painting {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+
+    padding: 2px;
+    border: solid 10px rgb(60, 60, 60);
+}
+
+h2 {
+    
+    font-size: 2em;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0px;
+    margin-left: 30px;
+}
+p {
+    font-size: 1.5em;
+}
+
+@media (max-width: 600px){
+    section{ margin: 0px; }
+
+    #title h1 { font-size: 2em;  margin: 10px;}
+
+    #title p { font-size: 1.5em; margin: 10px;}
+
+    .painting { 
+        margin: 10px, 0px;
+        padding: 1px;
+        border: solid 5px rgb(60, 60, 60);
+    }
+
+    .painting_block{
+        width: 330px;
+        margin: 0px;
+    }
+    h2 { font-size: 1.5em; }
+
+    h3 { font-size: 1em; margin-left: 0px;}
+
+    p { font-size:  1.2em; }
+
+}
+
+footer {
+    background-color: rgb(40,40,40);
+    color: rgb(230,230,230);
+    padding: 75px;
+    text-align: center;
+
+    font-family: 'Belleza', sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+  
+footer p {
+    color: rgb(200,200,200);
+}
+
+@media (max-width: 600px){
+    footer{
+        height: 80px;
+        font-size: 0.75em;
+    }
+}
+
+#search, #music{
+    width: 700px;
+    margin: 10px auto;  
+}
+
+#view-art {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#view-art img{
+    max-width: 20%;
+    max-height: 150px;
+    padding: 5px;
+}
+
+#view-music{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    margin:0;
+}
+
+input, button {
+    font-size: 1.5em;
+    font-family: 'Belleza', sans-serif;
+    margin-bottom: 10px;
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.song{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    width:40%;
+    padding:10px;
+    font-size: 1em;
+    font-family: 'Belleza', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.song_img{
+    width:40%;
+}
+
+.song_artist{
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@media (max-width: 700px){
+    #search, #music{
+        width: auto;
+        margin: 10px;
+    }
+    #view img{
+        max-width: 32.5%;
+        max-height: 100px;
+        padding: 5px;
+    }
+   
+    #view{
+        
+        margin: 10px;
+    }
+
+    .song{
+        width:40%;
+        padding:0;
+        font-size: 0.75em;
+    }
+    
+    .song_img{
+        width:70%;
+    }
+}
